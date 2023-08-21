@@ -124,7 +124,7 @@ def is_get_score(self, selected_ids):
     # Other fields and methods you would like to design
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    text = models.CharField(max_length=550, default="question text")
+    text = models.CharField(max_length=250, default="choice")
     is_correct = models.BooleanField(default=False)
 
 # <HINT> The submission model
